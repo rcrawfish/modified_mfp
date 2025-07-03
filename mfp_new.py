@@ -42,6 +42,8 @@ def mfp3d_new(arr, xth=0.5, iterations=10000000, verbose=True, point='random'):
         for i in range(iterations):
             x0, y0, z0 = xs[i], ys[i], zs[i]  # Get the random starting point
 
+            radius = []
+            
             # Shoot rays in each of the six directions
             for dx, dy, dz in unit_vectors:
                 x, y, z = x0, y0, z0  # Reset position for each ray direction
