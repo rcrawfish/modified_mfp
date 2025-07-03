@@ -4,7 +4,6 @@ import sys
 from datetime import datetime
 from time import time, sleep
 from tqdm import tqdm
-from scipy.spatial.transform import Rotation as R
 
 def mfp3d_seq(arr, xth=0.5, iterations=10000000, verbose=True, point='random'):
     iterations = int(iterations)
